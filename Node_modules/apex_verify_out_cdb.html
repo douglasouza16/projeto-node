@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head><title>APEX Verification Script</title></head><body bgcolor="#fdfdfd">
+<body><div align=left><b><font face="Arial,Helvetica"><font color="#ff0000"><font size=-2>21-SEP-2022 15:01:05 Ver 3.6 </font></font></font></b></div></body>
+<h5><font face="VERDANA"><font color="#000000">APEX Database Information<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>DB Information </FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production</FONT></TD></TR>
+</TABLE>
+<body><font face="Arial,Helvetica"><font color="#FF0000"><font size=3><BR>For APEX 3.2 and below, DB must be 9.2.0.3 or above.<BR>For APEX 4.0, DB must be 10.2.0.3 or above or 10g Express<BR>For APEX 5.0, DB must be 11.1.0.7 or later
+including Enterprise Edition and Express Edition (Oracle Database XE)<BR>For APEX 5.1 and 18.1, DB must be 11.2.0.4 or later including Enterprise Edition and Express Edition (Oracle Database XE)</font></font></font></body>
+<h5><font face="VERDANA"><font color="#000000">APEX Version Registered in DBA Registry <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Version </FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>API Compatibility</FONT></B></TH>
+       api_compatibility || '</FONT></TD></TR>' from APEX IS NOT INSTALLED.APEX_RELEASE
+                                                          *
+ERROR at line 3:
+ORA-00933: SQL command not properly ended
+
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000"> Number of APEX Valids/Invalids in the APEX IS NOT INSTALLED and FLOWS_FILES schemas <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Total APEX Valids </FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 0</FONT></TD></TR>
+</TABLE>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Total APEX Invalids </FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 0</FONT></TD></TR>
+</TABLE>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Total FLOWS_FILES Invalids </FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 0</FONT></TD></TR>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000"> List of APEX IS NOT INSTALLED and FLOWS_FILES Invalid Objects <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Object Name</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Object Type</FONT></B></TH>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000"> Virtual Image Directory (default and recommended -> /i/)<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2> Virtual Directory </FONT></B></TH>
+BEGIN dbms_output.put_line( '<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> '||APEX IS NOT INSTALLED.wwv_flow_image_prefix.g_image_prefix  ||  '</FONT></TD></TR>'); END;
+
+                                                                                               *
+ERROR at line 1:
+ORA-06550: line 1, column 96:
+PLS-00103: Encountered the symbol "INSTALLED" when expecting one of the following:
+null of nan infinite dangling a empty json
+ORA-06550: line 1, column 167:
+PLS-00103: Encountered the symbol ")" when expecting one of the following:
+, * & - + / at mod remainder rem <an identifier>
+<a double-quoted delimited-identifier> <an exponent (**)> as
+from into || bulk
+
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">APEX Related Schemas  <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>APEX Related Schemas </B></FONT></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Account Status </B></FONT></TH>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">ORDS Related Schemas  <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>ORDS Related Schemas </B></FONT></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Account Status </B></FONT></TH>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Proxy Users <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Proxy</B></FONT></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Client</FONT></B></TH>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000"> ORDS Version<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>ORDS Version </B></FONT></TH>
+select '<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> ' || version  ||  '</FONT></TD></TR>' from ords_metadata.ords_version
+                                                                                                                    *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Prior APEX Versions which May be Cleaned Up<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Consider Removing All Listed </B></FONT></TH>
+</TABLE>
+<body><font face="Arial,Helvetica"><font color="#FF0000"><font size=3>If your current APEX version is fully functional and backed up, consider removing earlier versions.<BR>
+Generally, this involves dropping the schema for the previous version or versions.  See the installation guide section entitled "About Removing Prior Oracle Application Express Installations" for more information.</font></font></font></body
+>
+
+<h5><font face="VERDANA"><font color="#000000">APEX Account Related Info <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Username</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Account Status</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> ANONYMOUS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> EXPIRED & LOCKED</FONT></TD>
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">APEX Instance Administrator Account Info<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Username</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Workspace Name</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Workspace ID</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Account Locked?</FONT></B></TH>
+FROM APEX_WORKSPACE_APEX_USERS WHERE WORKSPACE_NAME = 'INTERNAL'
+     *
+ERROR at line 5:
+ORA-00942: table or view does not exist
+
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">PL/SQL Toolkit Version <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Version </B></FONT></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 11.2.0.0.1</FONT></TD></TR>
+</TABLE>
+<body><font face="Arial,Helvetica"><font color="#FF0000"><font size=3>Check the PL/SQL Web Toolkit version. If less than 10.1.2.0.6 then upgrade (discuss with Oracle Support before upgrading)</font></font></font></body>
+<h5><font face="VERDANA"><font color="#000000">Duplicate OWA packages <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Owner</B></FONT></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Object Type</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> PACKAGE</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> PACKAGE BODY</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> PUBLIC</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYNONYM</FONT></TD></TR>
+
+</TABLE>
+<body><font face="Arial,Helvetica"><font color="#FF0000"><font size=3>Make sure you do not have duplicate copies of OWA packages. You should see the output as below:<BR><BR>
+        SYS..............PACKAGE<BR>
+        SYS..............PACKAGE BODY<BR>
+        PUBLIC........SYNONYM</font></font></font></body>
+
+<h5><font face="VERDANA"><font color="#000000">Shared Pool Size - Please see the APEX Installation Guide for your APEX/DB version for required settings  <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Shared Pool Size (MB)</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 0</FONT></TD></TR>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">NLS CHARACTER SET Information<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Parameter</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Parameter Value</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> NLS_NCHAR_CHARACTERSET</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> AL16UTF16</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> NLS_CHARACTERSET</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> WE8MSWIN1252</FONT></TD></TR>
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Free Space in System Tablespace  <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>MB Free in System </FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 2042</FONT></TD></TR>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Free Space in NO TABLESPACE Tablespace (AUTOEXTEND=NO) used by APEX IS NOT INSTALLED<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Free Space in MB</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> </FONT></TD></TR>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Free Space in NO TABLESPACE (AUTOEXTEND=NO) Tablespace used by FLOWS_FILES<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Free Space in MB</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> </FONT></TD></TR>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Default Temporary Tablespace used for APEX IS NOT INSTALLED is: NO TABLESPACE<font size=-2></font></font></font></h5>
+<h5><font face="VERDANA"><font color="#000000"> Number of Job Queue Processes<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2> Number of Job Queue Processes</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 46</FONT></TD></TR>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">XDB STATUS <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>owner</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>object_name</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>object_type</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Status</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> PUBLIC</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> DBMS_XMLPARSER</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYNONYM</FONT></TD>                 <TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> XDB</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> DBMS_XMLPARSER</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> PACKAGE</FONT></TD>                 <TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> XDB</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> DBMS_XMLPARSER</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> PACKAGE BODY</FONT></TD>            <TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+</TABLE>
+<body><font face="Arial,Helvetica"><font color="#FF0000"><font size=3>Make sure XML DB packages are installed and valid.  You should see the output as below:<BR><BR>
+         PUBLIC....DBMS_XMLPARSER....SYNONYM..............VALID<BR>
+         XDB..........DBMS_XMLPARSER....PACKAGE...............VALID<BR>
+         XDB..........DBMS_XMLPARSER....PACKAGE BODY....VALID</font></font></font></body>
+
+<h5><font face="VERDANA"><font color="#000000">APEX Install Type (1=Dev 0=Runtime) <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Install Type</FONT></B></TH>
+       '</FONT></TD></TR>' from APEX IS NOT INSTALLED.WWV_FLOWS where id = 4000
+                                     *
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Has APEX Been Used? <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Workspace ID</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Workspace Name</FONT></B></TH>
+from apex_workspaces order by workspace_id
+     *
+ERROR at line 3:
+ORA-00942: table or view does not exist
+
+
+</TABLE>
+<body><font face="Arial,Helvetica"><font color="#FF0000"><font size=3>Internal Workspaces have IDs less than 100,000.<BR>
+        Any Workspace ID >= 100,000 indicates APEX has been used. (In 12c Multi-Tenant, check only valid for PDB).</font></font></font></body>
+
+<h5><font face="VERDANA"><font color="#000000">Database Service Name <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>DB Service Name</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> CIBERNET_gru188.sub04031341361.vcn01.oraclevcn.com</FONT></TD></TR>
+</TABLE>
+<body><font face="Arial,Helvetica"><font color="#FF0000"><font size=3><BR>If in a 12c multi-tenant environment, the above is the service name of the CDB.<BR>This query will show the service name of the PDB:<BR> select name, pdb from
+cdb_services;</font></font></font></body>
+<h5><font face="VERDANA"><font color="#000000">Database SID <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>DB SID</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> CIBERNET</FONT></TD></TR>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Enabling of Network Services (11g DBs and Later) <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>ACL</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Principal</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Privilege</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> NETWORK_ACL_D9160FA9B0B47E0DE0532C05640A6BFB</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> GSMADMIN_INTERNAL</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> resolve</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> /sys/acls/oracle-sysman-ocm-Resolve-Access.xml</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> ORACLE_OCM</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> resolve</FONT></TD></TR>
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">DBA Registry Info <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Component ID</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Component Name</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Version</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Schema</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Status</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> APS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> OLAP Analytic Workspace</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> OPTION OFF</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> CATALOG</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Database Catalog Views</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> CATJAVA</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Database Java Packages</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> CATPROC</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Database Packages and Types</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> CONTEXT</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Text</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> CTXSYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> DV</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Database Vault</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> DVSYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> JAVAVM</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> JServer JAVA Virtual Machine</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> OLS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Label Security</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> LBACSYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> ORDIM</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Multimedia</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> ORDSYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> OWM</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Workspace Manager</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> WMSYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> RAC</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle Real Application Clusters</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> OPTION OFF</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SDO</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Spatial</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> MDSYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> XDB</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle XML Database</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> XDB</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> XML</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle XDK</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> SYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> VALID</FONT></TD></TR>
+
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> XOQ</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> Oracle OLAP API</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 19.0.0.0.0</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> OLAPSYS</FONT></TD>
+<TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> OPTION OFF</FONT></TD></TR>
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000"> APEX Instance Settings <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Name</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Value</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Description</FONT></B></TH>
+from APEX IS NOT INSTALLED.wwv_flow_platform_prefs order by name
+          *
+ERROR at line 4:
+ORA-00933: SQL command not properly ended
+
+
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000"> APEX Instance Grant Information. (Note that grant details may vary between APEX versions).<font size=-2></font></font></font></h5>
+<h5><font face="VERDANA"><font color="#33ccff"> <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Total Objects Granted to APEX IS NOT INSTALLED</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 0</FONT></TD></TR>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">The following displays all grants issued to the APEX IS NOT INSTALLED Schema.<font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Table Name</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Privilege</FONT></B></TH>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Number of Invalid Objects in the DB <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Total Invalid Objects in DB</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 0</FONT></TD></TR>
+</TABLE>
+<body><font face="Arial,Helvetica"><font color="#FF0000"><font size=3>There should be no invalid objects in the database pertaining to the owners within APEX/FLOWS. If there are any, recompile. Use the <b>utlrp.sql</b> script under the data
+base home to recompile.</font></font></font></body>
+
+<h5><font face="VERDANA"><font color="#000000">List of ALL Invalid Objects in the DB <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Owner</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Object Name</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Object type</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Status</FONT></B></TH>
+</TABLE>
+<h5><font face="VERDANA"><font color="#000000">Number of Invalid Synonyms in the DB <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Total Invalid Synonyms in DB</FONT></B></TH>
+<TR><TD BGCOLOR=#FFFFFF><FONT FACE="ARIAL" SIZE=2> 0</FONT></TD></TR>
+</TABLE>
+<body><font face="Arial,Helvetica"><font color="#FF0000"><font size=3>There should be no invalid objects in the database pertaining to the owners within APEX/FLOWS. If there are any, recompile. Use the <b>utlrp.sql</b> script under the data
+base home to recompile.</font></font></font></body>
+
+<h5><font face="VERDANA"><font color="#000000">List of Invalid SYNONYMS in the DB <font size=-2></font></font></font></h5>
+<TABLE BORDER  CELLPADDING=2>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Synonym Owner</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Synonym Name</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Object Owner</FONT></B></TH>
+<TH BGCOLOR=#33ccff><B><FONT FACE="ARIAL" COLOR="#FFFFFF" SIZE=2>Object Name </FONT></B></TH>
+</TABLE>
+</html>
